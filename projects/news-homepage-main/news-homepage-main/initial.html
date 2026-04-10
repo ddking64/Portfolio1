@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* BODY */
+body {
+  background: hsl(36, 100%, 99%);
+  color: hsl(240, 100%, 5%);
+  padding: 60px 120px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+nav ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* MAIN LAYOUT */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+/* LEFT MAIN */
+.left-main img {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.left-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.left-content h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.left-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: hsl(236, 13%, 42%);
+  margin-bottom: 30px;
+}
+
+.left-text button {
+  background: hsl(5, 85%, 63%);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* RIGHT MAIN */
+.right-main {
+  background: hsl(240, 100%, 5%);
+  padding: 30px 25px;
+}
+
+.right-main h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.news-item {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.news-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.news-item h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: hsl(36, 100%, 99%);
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: hsl(233, 8%, 79%);
+}
+
+/* BOTTOM SECTION */
+section {
+  display: flex;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+}
+
+.card img {
+  width: 100px;
+  height: auto;
+}
+
+.card h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(5, 85%, 63%)
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: hsl(236, 13%, 42%);
+}
+
+/* ATTRIBUTION */
+.attribution {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 11px;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="./assets/images/logo.svg" alt="">
+<nav>
+  <ul>
+<li><a href="./index.html">Home</a></li>
+<li><a href="#">New</a></li>
+<li><a href="#">Popular</a></li>
+<li><a href="#">Trending</a></li>
+<li><a href="#">Categories</a></li>
+
+  </ul>
+</nav>
+  </header>
+
+ <main>
+  <!-- LEFT -->
+  <div class="left-main">
+    <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+
+    <div class="left-content">
+      <h1>The Bright Future of Web 3.0?</h1>
+
+      <div class="left-text">
+        <p>
+          We dive into the next evolution of the web that claims to put the power
+          of the platforms back into the hands of the people. But is it really
+          fulfilling its promise?
+        </p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right-main">
+    <h2>New</h2>
+
+    <div class="news-item">
+      <h3>Hydrogen VS Electric Cars</h3>
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+    </div>
+
+    <div class="news-item">
+      <h3>The Downsides of AI Artistry</h3>
+      <p>What are the possible adverse effects of on-demand AI image generation?</p>
+    </div>
+
+    <div class="news-item">
+      <h3>Is VC Funding Drying Up?</h3>
+      <p>Private funding by VC firms is down 50% YOY.</p>
+    </div>
+  </div>
+</main>
+
+
+  <section>
+  <div class="card">
+    <img src="./assets/images/image-retro-pcs.jpg" alt="">
+    <div>
+      <h2>01</h2>
+      <h3>Reviving Retro PCs</h3>
+      <p>What happens when old PCs are given modern upgrades?</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./assets/images/image-top-laptops.jpg" alt="">
+    <div>
+      <h2>02</h2>
+      <h3>Top 10 Laptops of 2022</h3>
+      <p>Our best picks for various needs and budgets.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="./assets/images/image-gaming-growth.jpg" alt="">
+    <div>
+      <h2>03</h2>
+      <h3>The Growth of Gaming</h3>
+      <p>How the pandemic has sparked fresh opportunities.</p>
+    </div>
+  </div>
+</section>
+
+<div class="attribution">
+  Challenge by Frontend Mentor. Coded by You.
+</div>
+</body>
+</html>

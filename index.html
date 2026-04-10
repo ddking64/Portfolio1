@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ominu David | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <h2 class="logo">David Web Craft</h2>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+      <div class="home-content">
+        <h1>Hi, I'm <span>Ominu David</span></h1>
+
+        <p>
+          Frontend developer in training focused on building responsive and
+          user-friendly websites using HTML, CSS, and JavaScript.
+        </p>
+
+        <a href="#projects" class="btn">View My Projects</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I have been learning frontend development for the past 2 months,
+        building multiple real-world projects. My goal is to become a skilled
+        frontend developer and create clean, responsive, and interactive web
+        applications.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+
+      <div class="projects-container">
+        <div class="project-card">
+          <a
+            href="./projects/news-homepage-main/news-homepage-main/index.html"
+            target="_blank"
+            ><img src="./images/news.jpg" alt="News Homepage"
+          /></a>
+          <h3>News Homepage</h3>
+          <p>Responsive news homepage layout built with HTML & CSS.</p>
+          <a
+            href="./projects/news-homepage-main/news-homepage-main/index.html"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card">
+          <a
+            href="./projects/recipe-page-main/recipe-page-main/index.html"
+            target="_blank"
+            ><img src="./images/recipe.jpg" alt="Recipe Page"
+          /></a>
+          <h3>Recipe Page</h3>
+          <p>Clean and simple recipe page design with structured layout.</p>
+          <a
+            href="./projects/recipe-page-main/recipe-page-main/index.html"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card">
+          <a
+            href="./projects/crowdfunding-product-page-main/index.html"
+            target="_blank"
+            ><img src="./images/crowdfunding.jpg" alt="Crowdfunding Webpage"
+          /></a>
+          <h3>Crowdfunding Webpage</h3>
+          <p>Interactive product page with user-focused design.</p>
+          <a
+            href="./projects/crowdfunding-product-page-main/index.html"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card">
+          <a href="./projects/contact-form-main/index.html" target="_blank"
+            ><img src="./images/contact.jpg" alt="Contact Form"
+          /></a>
+          <h3>Contact Form</h3>
+          <p>Form with input validation using JavaScript.</p>
+          <a href="./projects/contact-form-main/index.html" target="_blank"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card">
+          <a
+            href="./projects/social-links-profile-main/index.html"
+            target="_blank"
+            ><img src="./images/social.jpg" alt="Social Links"
+          /></a>
+          <h3>Social Links</h3>
+          <p>Profile page displaying social media links.</p>
+          <a
+            href="./projects/social-links-profile-main/index.html"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card">
+          <a href="./projects/Lecture_Folder/diit.html" target="_blank"
+            ><img src="./images/learning.jpg" alt="diit website"
+          /></a>
+          <h3>Learning Website</h3>
+          <p>A website for training company</p>
+          <a href="./projects/Lecture_Folder/diit.html" target="_blank"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <a href="./projects/Lecture_Folder/shoe.html" target="_blank"
+            ><img src="./images/shoe.jpg" alt="shoe website"
+          /></a>
+          <h3>Shoe Website</h3>
+          <p>Simple product landing page design.</p>
+          <a href="./projects/Lecture_Folder/shoe.html" target="_blank"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+   <section id="contact" class="contact">
+  <h2>Contact Me</h2>
+
+  <!-- DIRECT CONTACT INFO -->
+  <div class="contact-info">
+    <p><strong>Email:</strong> davidominu60@gmail.com</p>
+    <p><strong>Phone:</strong> 07040326844</p>
+  </div>
+
+  <!-- FORM -->
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+
+    <p id="form-message"></p>
+  </form>
+</section>
+    <!-- JS FILE -->
+    <script src="script.js"></script>
+  </body>
+</html>

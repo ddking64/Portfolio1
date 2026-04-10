@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="cform.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="success-container">
+      <div class="success-wrapper">
+        <img src="./assets/images/icon-success-check.svg" alt="">
+        <h2> Message Sent!</h2>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <section class="container">
+      <h1>Contact Us</h1>
+      <form>
+        <div class="name-wrapper">
+          <div class="name">
+            <label for="">First Name</label>
+            <input type="text" />
+            <p class="error"></p>
+          </div>
+          <div class="name">
+            <label for="">Last Name</label>
+            <input type="text" />
+            <p class="error"></p>
+          </div>
+        </div>
+        <label for="">Email Address</label>
+        <input type="email" />
+        <label for="">Query Type</label>
+        <p class="error"></p>
+        <div class="query-type">
+          <div class="query">
+            <button >
+              <span
+                ><img
+                  src="./assets/images/icon-radio-selected.svg"
+                  alt="" /></span
+              >General Enquiry
+            </button>
+            <p class="error"></p>
+          </div>
+          <div class="query">
+            <button>
+              <span
+                ><img
+                  src="./assets/images/icon-radio-selected.svg"
+                  alt="" /></span
+              >Support Request
+            </button>
+          </div>
+        </div>
+        <label for="">Message</label>
+        <textarea name="" id=""></textarea>
+        <p class="error"></p>
+
+        <div class="consent">
+          <div>
+            <img src="./assets/images/icon-checkbox-check.svg" alt="" />
+          </div>
+          <p>I consent to being contacted by the team</p>
+        </div>
+      </form>
+      <p class="error"></p>
+
+      <input type="submit" value="Submit" />
+    </section>
+    <!-- Please select a query type
+
+  Message
+  This field is required
+
+  
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>

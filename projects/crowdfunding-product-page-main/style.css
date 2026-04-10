@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Commissioner", sans-serif;
+}
+:root {
+  --green_400: hsl(176, 50%, 47%);
+  --green_700: hsl(176, 72%, 28%);
+  --black: hsl(0, 0%, 0%);
+  --grey: hsl(0, 0%, 48%);
+  --light-grey: hsla(0, 0%, 48%, 0.3);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  position: relative;
+}
+.paragraph-style {
+  color: var(--grey);
+  line-height: 1.5rem;
+}
+.flex-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-style-2 {
+  display: flex;
+  gap: 1rem;
+}
+.header {
+  background-image: url("./images/image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  padding: 3rem 8rem 0 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header nav ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 1rem;
+}
+.header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.main-wrapper {
+  background: hsla(0, 0%, 48%, 0.2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main-header {
+  width: 60%;
+  background: white;
+  padding: 0 1.5rem 2.5rem 1.5rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  margin-top: -5%;
+}
+.bamboo-logo {
+  position: relative;
+  margin-top: -30px;
+}
+.main-header h1 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.main-header p {
+  margin-bottom: 1rem;
+}
+.header-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-button {
+  background: var(--green_400);
+  color: white;
+  padding: 1rem 2.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+.bookmark-button {
+  background: hsla(0, 0%, 48%, 0.3);
+  padding-right: 1.5rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 2rem;
+  color: var(--grey);
+  cursor: pointer;
+}
+.analysis-container {
+  width: 60%;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+}
+
+.data-container {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.data {
+  border-right: 1px solid var(--grey);
+  padding-right: 3rem;
+}
+.data p {
+  color: var(--grey);
+  margin-top: 0.3rem;
+}
+.data:last-child {
+  border: none;
+}
+
+.progress {
+  margin-top: 2rem;
+  background: var(--light-grey);
+  width: 100%;
+  height: 1rem;
+  border-radius: 1rem;
+}
+.progress div {
+  width: 60%;
+  background: var(--green_400);
+  height: 1rem;
+  border-radius: 1rem;
+}
+.about-container {
+  width: 60%;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+}
+.about-wrapper > h3 {
+  margin-bottom: 2rem;
+}
+.about-wrapper p {
+  color: var(--grey);
+  margin-bottom: 1.5rem;
+  line-height: 1.8rem;
+}
+.about-content {
+  border: 1px solid var(--light-grey);
+  padding: 1.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+}
+.about-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.about-content p {
+  color: var(--grey);
+  line-height: 1.5rem;
+}
+.about-header p {
+  color: var(--green_400);
+}
+.about-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.amount-left {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit h3,
+.edit p,
+.edit h2 {
+  color: var(--light-grey);
+}
+.edit button {
+  background: var(--light-grey);
+  cursor: auto;
+}
+
+/* modal section */
+.modal-container {
+  background: hsla(0, 0%, 0%, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.modal-main {
+  background: var(--white);
+  width: 50%;
+  position: relative;
+  top: 15%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.modal-header img {
+  float: right;
+  margin-bottom: 1rem;
+}
+.modal-header h2 {
+  margin-bottom: 1rem;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.modal-header {
+  margin-bottom: 2rem;
+}
+.main-body-content {
+  border: 1px solid var(--grey);
+  border-radius: 0.5rem;
+}
+.main-body-wrapper {
+  padding: 1.5rem;
+}
+.outer-check {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--grey);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-color {
+  width: 16px;
+  height: 16px;
+  background: var(--green_400);
+  border-radius: 50%;
+  display: none;
+}
+.main-content-right h3 {
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+.main-right-header {
+  margin-bottom: 1rem;
+}
+.main-right-left {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.main-right-left p {
+  color: var(--green_400);
+}
+.edit h3,
+.edit p {
+  color: var(--light-grey);
+}
+.pledge-container {
+  padding: 1.5rem;
+  border: 1px solid var(--light-grey);
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.pledge-container div {
+  width: 60%;
+}
+.pledge-container form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
+}
+.pledge-container form div {
+  border: 1px solid var(--light-grey);
+  padding: 0.5rem;
+  border-radius: 2rem;
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+  width: 50%;
+}
+.pledge-container form div input {
+  border: none;
+  outline: none;
+}
+.pledge-container form button {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.success-modal-container {
+  background: hsla(0, 0%, 0%, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.success-modal {
+  background: var(--white);
+  width: 30%;
+  position: relative;
+  top: 20%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.icon-menu,
+.mobile-bookmark {
+  display: none;
+}
+@media(min-width:481px)and(max-width:900px){
+  .header{
+    padding: 4rem 4rem 0 4rem;
+  }
+  .main-header,.about-container, .analysis-container{
+    width: 70%;
+
+  }
+}
+@media (max-width: 480px) {
+  body {
+    position: relative;
+  }
+  .header {
+    background-image: url("./images/image-hero-desktop.jpg");
+
+    height: 100vh;
+    padding: 2rem 2rem 0 2rem;
+  }
+  .icon-menu {
+    display: block;
+  }
+  .header nav {
+    /* display: none; */
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    width: 100%;
+    z-index: 10;
+    transform: translateX(-100%);
+    transition: all ease-in;
+  }
+  .header nav ul {
+    width: 80%;
+    background: var(--white);
+    margin: 0 auto;
+    border-radius: 0.5rem;
+  }
+  .header nav ul li {
+    width: 80%;
+    background: var(--white);
+    padding-left: 1.5rem 0;
+  }
+  .header nav ul li a {
+    color: var(--black);
+  }
+  .data-container {
+    flex-direction: column;
+  }
+  .main-header {
+    width: 90%;
+    margin-top: -20%;
+  }
+  .main-header h1 {
+    font-size: 1.5rem;
+  }
+  .bookmark-button {
+    display: none;
+  }
+  .mobile-bookmark {
+    display: block;
+    background: none;
+    cursor: pointer;
+    border: none;
+  }
+  .analysis-container {
+    width: 90%;
+  }
+  .data-container {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .data {
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: 0.5rem;
+  }
+  .about-container {
+    width: 90%;
+  }
+  .about-header,
+  .about-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
